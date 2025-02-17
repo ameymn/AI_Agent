@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 load_dotenv() 
 
 HF_TOKEN=os.getenv("HF_TOKEN")
-print(HF_TOKEN)
 client=InferenceClient("meta-llama/Llama-3.2-3B-Instruct")
 
 prompt=""""<|begin_of_text|><|start_header_id|>user<|end_header_id|>
